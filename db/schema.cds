@@ -3,7 +3,6 @@ using { cuid } from '@sap/cds/common';
 using { Attachments } from '@cap-js/attachments';
 
 entity Incidents : cuid {
-  incidentsID: Integer @assert.unique @mandatory;
   title: String(100);
   urgency: String(20);
   status: String(20);
